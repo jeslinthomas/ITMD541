@@ -6,3 +6,7 @@ html {
   line-height: 24px;
   padding: 10px;
 }
+
+html#home {
+  background-color: #E5E4E2;
+}
