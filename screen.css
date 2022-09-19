@@ -10,3 +10,15 @@ html {
 html#home {
   background-color: #E5E4E2;
 }
+
+h1 {
+  font-size: 27px;
+}
+
+h2,
+h3,
+h4,
+.footer {
+  font-weight: bold;
+  font-size: 19px;
+}
