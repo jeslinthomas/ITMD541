@@ -22,3 +22,14 @@ h4,
   font-weight: bold;
   font-size: 19px;
 }
+
+#community li,
+#interests li {
+  list-style-type: disc;
+  list-style-position: outside;
+}
+
+#footer-nav a {
+  color: black;
+  text-decoration: none;
+}
