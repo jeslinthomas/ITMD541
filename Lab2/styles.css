@@ -47,10 +47,18 @@
 
 #flex-section3 .box {
 	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 #flex-section3 .tags ul {
-
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
 }
 
 /* end Flexbox Part 3 */
