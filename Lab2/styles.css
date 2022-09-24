@@ -2,7 +2,11 @@
 
 #flex-section1 ul {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0px;
+	margin: 10px;
+	list-style: none;
 }
 
 /* end Flexbox Part 1 */
@@ -11,7 +15,11 @@
 /* Flexbox Part 2 */
 
 #flex-section2 ul {
-
+	display: flex;
+	flex: auto;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
 }
 
 #flex-section2 li {
@@ -19,15 +27,18 @@
 }
 
 #flex-section2 .item1 {
-
+	flex: 1;
+	order: 1;
 }
 
 #flex-section2 .item2 {
-
+	flex: 1;
+	order: 3;
 }
 
 #flex-section2 .item3 {
-
+	flex: 1;
+	order: 2;
 }
 
 /* end Flexbox Part 2 */
@@ -36,7 +47,7 @@
 /* Flexbox Part 3 */
 
 #flex-section3 .box {
-
+	display: flex;
 }
 
 #flex-section3 .tags ul {
