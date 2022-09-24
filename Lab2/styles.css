@@ -79,6 +79,9 @@
 /* Grid Part 2 */
 
 #grid-section2 .gridboxblue {
+	grid-column: 2 / 6;
+	grid-row: 1 / 6;
+}
 
 }
 
@@ -122,15 +125,14 @@
 	color: #000;
 	padding: 20px;
 	text-decoration: none;
-
-
+	transition: all 3s ease;
 }
 
 #transition-section .box a:hover {
 	background-color: #cc0000;
 	color: #fff;
-
-
+	transition: background-color 0.5s ease;
+	border-radius: 0;
 }
 
 /* end Transition Part */
