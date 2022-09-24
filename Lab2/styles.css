@@ -19,11 +19,10 @@
 	flex: auto;
 	padding: 0px;
 	margin: 0px;
-	list-style: none;
 }
 
 #flex-section2 li {
-
+	list-style: none;
 }
 
 #flex-section2 .item1 {
