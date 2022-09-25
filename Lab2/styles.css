@@ -86,7 +86,7 @@
 }
 
 #grid-section2 .gridboxred {
-
+	grid-column: 1 / span 2;
 }
 
 /* end Grid Part 2 */
@@ -95,23 +95,30 @@
 /* Grid Part 3 */
 
 #grid-section3 .grid {
-
+	display: grid;
+	grid-template-columns: 2fr 1fr ;
+	grid-template-rows: 100px 300px 100px;
+	grid-gap: 10px;
+	grid-template-areas:
+	 "box1 box1"
+	 "box3 box2"
+	 "box4 box4";
 }
 
 #grid-section3 .box1 {
-
+	grid-area: box1;
 }
 
 #grid-section3 .box2 {
-
+	grid-area: box2;
 }
 
 #grid-section3 .box3 {
-
+	grid-area: box3;
 }
 
 #grid-section3 .box4 {
-
+	grid-area: box4;
 }
 
 /* end Grid Part 3 */
