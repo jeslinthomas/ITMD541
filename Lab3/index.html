@@ -8,14 +8,14 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     </head>
     <body>
-      <main id="oninput">
+      <form id="oninput">
         <h1>ITMD541 Lab3 Druva</h1>
         <section>
           <h2>Tip Calculator</h2>
           <div class="bill">
             <label for="yourBill"> Bill Amount</label>
             <button><i class="fa-sharp fa-solid fa-dollar-sign"></i></button>
-            <input type="number" placeholder="Your Bill" id="yourBill" onclick="yourBill(event)" >
+            <input type="text" placeholder="Your Bill" id="yourBill">
           </div>
           <div>
             <div class="space-between">
@@ -63,29 +63,8 @@
             <span id="tipEach"></span>
           </div>
         </section>
-      </main>
+      </form>
     </body>
     <script src="main.js">
     </script>
     </html>
-
-
-<!--
-<h1 id="calculator">Tip Calculator</h1>
-Bill Amount : $
-<input type="number" id="bill"><br>
-Tip Percentage:
-<input type="range" min="0" max="100" value = "0" step="1" onchange="tipCalculate(this.value, 'bill')">
-<span id ="slideval">0%</span>
-<h2> Total Tip :
-  <span id="tip"></span>
-</h2>
-<form action="#null" method="get" id="tip-calculator">
-      <label for="Bill Amount"></label>
-      <input type="number" name="input-number" value="number">
-      <label for="Bill Amount"></label>
-      <input type="number" name="input-number" value="number">
-      <label for="Bill Amount"></label>
-      <input type="number" name="input-number" value="number">
-      <button type="Get Total" name="Total"></button>
-    </form> -->
