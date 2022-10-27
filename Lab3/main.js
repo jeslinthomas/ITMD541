@@ -13,11 +13,14 @@ function splitFormat(value) {
 
 function yourBill() {
   var bill = Number(document.getElementById ('yourBill').value);
+  if(isNaN(bill) || bill <= 0)
+  {
+      alert("Numbers Only Please!");
+      document.getElementById('yourBill').value = '';
+      yourBill = "";
+  }
   var tipPercent = document.getElementById ('tipInput').value;
   var split = document.getElementById ('splitInput').value;
-  // console.log({bill, tipPercent, split });
-  // console.log('Variables created are working');
-
   var tipValue = bill * (tipPercent / 100) ;   // console.log(tipValue);
   var tipEach = tipValue / split;
   var splitBillEach = ( bill + tipValue ) / split;
@@ -29,7 +32,7 @@ function yourBill() {
   document.getElementById('splitValue').innerHTML = splitFormat(split);
   document.getElementById('billEach').innerHTML = billFormat(splitBillEach);
   document.getElementById('tipEach').innerHTML = billFormat(tipEach);
-}
 
+}
   var oninput = document.getElementById('oninput');
   oninput.addEventListener('input', yourBill)
